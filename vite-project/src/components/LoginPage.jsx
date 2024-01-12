@@ -42,7 +42,7 @@ export default function LoginForm() {
                         variant='outlined'
                         type='text'
                         name='username'
-                        required
+                        requiredmCOntr
                     />
                 </FormControl>
                 <FormControl sx={{ bgcolor: 'lightBlue', minWidth: '80%', }}>
