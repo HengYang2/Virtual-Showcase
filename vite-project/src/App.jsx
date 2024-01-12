@@ -40,7 +40,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <MuiNavbar />
+      <LoginPage />
     </ThemeProvider>
   )
 }
