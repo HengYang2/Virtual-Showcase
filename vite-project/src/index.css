@@ -6,3 +6,12 @@ body {
   height: 100%;
   position: absolute;
 }
+
+#lower-z-index{
+  padding: 0%;
+  margin: 0%;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}

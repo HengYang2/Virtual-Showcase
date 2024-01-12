@@ -9,9 +9,10 @@ export default function LoginForm() {
     };
 
     return (
-        <Container sx={{ height: '100%', minWidth: '100%', bgcolor: 'black', display:'flex',  flexDirection:'row', justifyContent:'center', alignItems:'center'  }}>
-            <Stack onSubmit={handleSubmit} sx={{ height: '77%', width: '25%', padding:'', bgcolor: 'grey' }}>
-                <FormControl sx={{ height: '20%', width: '80%',  bgcolor: 'white' }}>
+        <Container sx={{ height: '100%', minWidth: '100%', bgcolor: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '0%', margin: '0%', }}>
+            <img src='../../public/MrFrogBanner.png' />
+            <Container onSubmit={handleSubmit} sx={{ height: '77%', width: '25%', padding: '', bgcolor: 'grey', position: 'absolute' }}>
+                <FormControl sx={{ height: '20%', width: '80%', bgcolor: 'white' }}>
                     <TextField
                         label="Username"
                         variant="outlined"
@@ -20,7 +21,7 @@ export default function LoginForm() {
                         required
                     />
                 </FormControl>
-                <FormControl sx={{ height: '77%', width: '25%'}}>
+                <FormControl sx={{ height: '77%', width: '25%' }}>
                     <TextField
                         label="Password"
                         variant="outlined"
@@ -32,7 +33,7 @@ export default function LoginForm() {
                 <Button type="submit" variant="contained" color="primary">
                     Login
                 </Button>
-            </Stack>
+            </Container>
         </Container>
     );
 };
