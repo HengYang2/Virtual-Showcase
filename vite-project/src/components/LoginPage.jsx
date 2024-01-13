@@ -1,5 +1,7 @@
 import React from 'react';
-import { FormControl, Button, TextField, Container, Stack, FormLabel, FormGroup, FormControlLabel, Checkbox, Switch } from '@mui/material';
+import { FormControl, Button, TextField, Container, Stack, FormLabel, FormGroup, FormControlLabel, Checkbox, Switch, Typography, Icon } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
+
 
 export default function LoginForm() {
 
@@ -36,14 +38,12 @@ export default function LoginForm() {
         <Container sx={{ height: '100%', minWidth: '100%', bgcolor: '', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '0%', margin: '0%', }}>
             <img src='../../public/MrFrogBanner.png' />
             <form>
-                <FormControl sx={{ bgcolor: 'lightBlue', minWidth: '80%', }}>
-                    <TextField
-                        label="Username"
-                        variant='outlined'
-                        type='text'
-                        name='username'
-                        requiredmCOntr
-                    />
+                <HomeIcon></HomeIcon>
+                <FormControl sx={{ bgcolor: '', minWidth: '80%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
+  
+                    <Typography variant="subtitle1" component="h2">
+                        Virtual Showcase
+                    </Typography>
                 </FormControl>
                 <FormControl sx={{ bgcolor: 'lightBlue', minWidth: '80%', }}>
                     <TextField
@@ -63,8 +63,33 @@ export default function LoginForm() {
                         required
                     />
                 </FormControl>
-                <h1>Hello</h1>
+                <FormControl sx={{ bgcolor: 'lightBlue', minWidth: '80%', }}>
+                    <Checkbox
+                        
+                    >Keep me signed in</Checkbox>
+                </FormControl>
+                <FormControl sx={{ bgcolor: 'lightBlue', minWidth: '80%', }}>
+                        <Button
+                            variant='contained'
+                        >Sign In</Button>
+                </FormControl>
             </form>
         </Container>
     );
 };
+
+
+//logo
+//Brand Name
+//Brand info
+
+//Sign in with google
+//Sign in with linked in
+
+//--or--
+
+//Username
+//Password
+//Keep me signed in
+//Sign in button
+//
