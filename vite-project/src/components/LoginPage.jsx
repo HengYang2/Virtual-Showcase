@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormControl, Button, TextField, Container, Stack, FormLabel, FormGroup, FormControlLabel, Checkbox, Switch, Typography, Icon } from '@mui/material';
+import { FormControl, Button, TextField, Container, Stack, FormLabel, FormGroup, FormControlLabel, Checkbox, Switch, Typography, Icon, Link } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 
 
@@ -72,6 +72,11 @@ export default function LoginForm() {
                         <Button
                             variant='contained'
                         >Sign In</Button>
+                </FormControl>
+                <FormControl>
+                    <Link>
+                        Dont have an account?
+                    </Link>
                 </FormControl>
             </form>
         </Container>
